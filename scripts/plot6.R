@@ -3,7 +3,7 @@ SCC_motor <- SCC$SCC[grep("Motor", SCC$Short.Name)]
 
 # Get Baltimore motor vehicle observations
 baltimore_LA_NEI <- NEI[NEI$fips=="24510" | NEI$fips=="06037",]
-motor_NEI <- baltimore_NEI[baltimore_LA_NEI$SCC %in% SCC_motor,]
+motor_NEI <- baltimore_LA_NEI[baltimore_LA_NEI$SCC %in% SCC_motor,]
 
 # Group motor vehicle emissions by year and area
 motor_groups <-
@@ -22,7 +22,8 @@ with(motor_groups,
 mtext("Total Motor Vehicle Emissions in Baltimore and Los Angeles from 1999 to 2008", outer=TRUE)
 
 # Add data to plot
-lines(motor_groups$year, motor_groups$total_emissions)
+lines(motor_groups$year, motor_groups$total_emissions[NEI$fips=="24510"])
+lines(motor_groups$year, motor_groups$total_emissions[NEI$fips=="06037"])
 
 # Close png file
 dev.off()
