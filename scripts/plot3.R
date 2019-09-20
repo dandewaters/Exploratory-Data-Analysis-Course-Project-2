@@ -10,7 +10,7 @@ baltimore_types <-
   summarise(totalEmissions = sum(Emissions))
 
 # Make PNG file
-png("./plots/plot3.png", width=480, height=480)
+png("./plots/plot3.png", width=720, height=720)
 
 # Make titles/labels
 mtitle="Total Emissions in Baltimore by Type from 1999 to 2008"
