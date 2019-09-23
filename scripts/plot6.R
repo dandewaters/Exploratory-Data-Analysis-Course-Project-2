@@ -19,11 +19,11 @@ with(motor_groups,
      plot(total_emissions~year, type="n", xlab="Year", ylab="Total Emissions", col=motor_groups$fips))
 
 # Add main title
-mtext("Total Motor Vehicle Emissions in Baltimore and Los Angeles from 1999 to 2008", outer=TRUE)
+title(main="\nTotal Motor Vehicle Emissions in Baltimore and Los Angeles from 1999 to 2008", outer=TRUE)
 
 # Add data to plot
-lines(motor_groups$year, motor_groups$total_emissions[NEI$fips=="24510"])
-lines(motor_groups$year, motor_groups$total_emissions[NEI$fips=="06037"])
+lines(motor_groups$year[motor_groups$fips=="24510"], motor_groups$total_emissions[motor_groups$fips=="24510"])
+lines(motor_groups$year[motor_groups$fips=="06037"], motor_groups$total_emissions[motor_groups$fips=="06037"])
 
 # Close png file
 dev.off()
