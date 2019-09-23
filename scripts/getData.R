@@ -1,3 +1,11 @@
+## ==========================================================
+# Filename: getData.R
+# Author: Daniel DeWaters
+# Date Created: 9/18/2019
+# Description: Download, read in, and clean emissions dataset
+# ***Run this script before the plotting scripts***
+## ==========================================================
+
 library(tidyr)
 library(dplyr)
 

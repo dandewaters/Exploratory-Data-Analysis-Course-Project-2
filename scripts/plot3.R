@@ -1,3 +1,11 @@
+## ===========================================================================
+# Filename: plot3.R
+# Author: Daniel DeWaters
+# Date Created: 9/18/2019
+# Description: Plot the PM2.5 emissions in Baltimore by source type from 1999
+#              to 2008
+# ***Run getData.R before any of the plotting scripts***
+## ===========================================================================
 library(tidyr)
 library(dplyr)
 library(ggplot2)

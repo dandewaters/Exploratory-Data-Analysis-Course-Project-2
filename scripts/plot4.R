@@ -1,3 +1,14 @@
+## ===========================================================================
+# Filename: plot4.R
+# Author: Daniel DeWaters
+# Date Created: 9/19/2019
+# Description: Plot the total coal combustion-related emissions in the US from
+#              1999 to 2008
+# ***Run getData.R before any of the plotting scripts***
+## ===========================================================================
+library(tidyr)
+library(dplyr)
+
 # Get SCC codes corresponding to coal
 SCC_coal <- SCC$SCC[grep("Anthracite Coal|Bituminous/Subbituminous Coal|Lignite", SCC$SCC.Level.Three)]
 
@@ -20,7 +31,7 @@ with(NEI_coal_groups,
           xlab="Year", ylab="Total Emissions"))
 
 # Add main title
-title(main="Total Coal Combustion-Related Emissions from 1999 to 2008")
+title(main="Total Coal Combustion-Related Emissions in US from 1999 to 2008")
 
 # Add data to plot
 lines(NEI_coal_groups$year, NEI_coal_groups$total_emissions)

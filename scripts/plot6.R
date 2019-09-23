@@ -1,3 +1,13 @@
+## ======================================================================
+# Filename: plot6.R
+# Author: Daniel DeWaters
+# Date Created: 9/20/2019
+# Description: Plot the total motor vehicle emissons in Baltimore and Los
+#              Angeles from 1999 to 2008
+# ***Run getData.R before any of the plotting scripts***
+## ======================================================================
+
+
 # Get SCC codes that correspond to motor vehicle emissions
 SCC_motor <- SCC$SCC[grep("Motor", SCC$Short.Name)]
 

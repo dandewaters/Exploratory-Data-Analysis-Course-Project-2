@@ -1,3 +1,10 @@
+## =========================================================================
+# Filename: plot2.R
+# Author: Daniel DeWaters
+# Date Created: 9/18/2019
+# Description: Plot the total PM2.5 emissions in Baltimore from 1999 to 2008
+# ***Run getData.R before any of the plotting scripts***
+## =========================================================================
 library(tidyr)
 library(dplyr)
 

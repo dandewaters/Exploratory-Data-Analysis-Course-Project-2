@@ -1,3 +1,10 @@
+## ======================================================================
+# Filename: plot1.R
+# Author: Daniel DeWaters
+# Date Created: 9/18/2019
+# Description: plot the total PM2.5 emissions in the US from 1999 to 2008
+# ***Run getData.R before any of the plotting scripts***
+## ======================================================================
 library(tidyr)
 library(dplyr)
 
