@@ -20,4 +20,3 @@ NEI <-
   mutate(fips = as.factor(fips)) %>%
   mutate(Pollutant = as.factor(Pollutant)) %>%
   mutate(type = as.factor(type))
-

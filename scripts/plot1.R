@@ -17,7 +17,7 @@ with(NEI_totals,
            xlab="Year", ylab="Total Emissions"))
 
 # Add main title
-title(main="Total Emissions in US from 1999 to 2008")
+title(main="Total PM2.5 Emissions in US from 1999 to 2008")
 
 # Add data to plot
 lines(NEI_totals$year, NEI_totals$totalEmissions)

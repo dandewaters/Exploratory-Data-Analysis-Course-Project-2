@@ -18,7 +18,7 @@ with(baltimore_totals,
           xlab="Year", ylab="Total Emissions"))
 
 # Add main title
-title(main="Total Emissions in Baltimore from 1999 to 2008")
+title(main="Total PM2.5 Emissions in Baltimore from 1999 to 2008")
 
 # Add data to plot
 lines(baltimore_totals$year, baltimore_totals$totalEmissions)
